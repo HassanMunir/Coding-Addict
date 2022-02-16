@@ -1,5 +1,50 @@
+/* Color
+Light Blue:   #2b98f0
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: roboto, sans-serif;
+  background: #f5f5f5;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  flex: 0 0 auto;
+}
+
+#banner {
+  flex: 1 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: block;
+  color: #2b98f0;
+  background: transparent;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  transition: color 1s ease, background 1s ease, padding 1s ease;
+}
+
+nav ul li a:hover {
+  color: #f5f5f5;
+  padding-left: 60px;
+  background: #2b98f0;
 }

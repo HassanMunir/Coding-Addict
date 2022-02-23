@@ -446,4 +446,20 @@ nav ul li a:hover {
   font-size: 40px;
   margin-right: 10px;
 }
+
+@media screen and (min-width: 576px) {
+  .portfolio-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .work {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    flex: 0 0 calc(33.3% - 15px);
+  }
+}
 /* End of Portfolio */
